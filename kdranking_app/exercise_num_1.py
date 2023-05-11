@@ -11,6 +11,7 @@ Implementar un menú de aplicación con las siguientes opciones:
     [1] – Importar palabras clave
     [2] – Mostrar palabras clave
     [0] – Salir
+    
 
 Implementar una función carga_keywords() que lea un fichero llamado keywords.txt:
 
