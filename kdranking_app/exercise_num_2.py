@@ -41,3 +41,8 @@ Requisitos:
 
 '''
 
+import requests
+
+resp = requests.get('https://pokeapi.co/api/v2/pokemon/ditto')
+
+print(resp.json())
