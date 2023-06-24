@@ -42,7 +42,15 @@ Requisitos:
 '''
 
 import requests
+from bs4 import BeautifulSoup
 
-resp = requests.get('https://pokeapi.co/api/v2/pokemon/ditto')
+#resp = requests.get('https://pokeapi.co/api/v2/pokemon/ditto')
 
-print(resp.json())
+#print(resp.json())
+
+resp = requests.get('https://www.youtube.com/')
+
+soup = BeautifulSoup(resp.text, 'lxml')
+
+divs = soup.find_all('div', {'class', 'block red'})
+
